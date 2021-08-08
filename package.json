@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "Private",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0wx/example-discord-bot.git"
+  },
   "scripts": {
     "test": "jest",
     "build": "tsc",
