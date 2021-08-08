@@ -1,0 +1,30 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Private",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "postinstall": "yarn build",
+    "start": "yarn build && node build",
+    "dev": "nodemon -r dotenv/config build",
+    "format": "prettier -w './src/**/*.{ts,json}'",
+    "isready": "yarn format && yarn test && yarn build --diagnostics"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.13",
+    "dotenv": "^10.0.0",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  }
+}
