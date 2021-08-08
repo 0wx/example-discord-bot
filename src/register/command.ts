@@ -7,7 +7,13 @@ const guildId = process.env.GUILD_ID!
 const commands = [
   {
     name: 'ping',
-    description: 'Replies with Pong!',
+    description: 'Replies with your input!',
+    options: [{
+      name: 'input',
+      type: 'INTEGER',
+      description: 'The input to echo back',
+      required: true,
+    }]
   },
   {
     name: 'version',
